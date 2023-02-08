@@ -60,13 +60,11 @@ def main():
 
     lcd.lcd_clear()
     lcd.lcd_display_string("DevOps for AIoT", 1)  # write on line 1
-    lcd.lcd_display_string("Rel = " + 2.1, 2)  # write on line 2
+    lcd.lcd_display_string("Rel = " + "2.1", 2)  # write on line 2
     # starting on 3rd column
 
     sleep(2)  # wait 2 sec
 
-    # Get IP address
-    local_ip_address = socket.gethostbyname("raspberrypi")
 
     # Buzzer beep
     buzzer.init()
