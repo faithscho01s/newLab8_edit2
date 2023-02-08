@@ -2,11 +2,11 @@
 FROM arm32v7/python:3
 
 # Copy the main.py and HAL folder to blink LED
-COPY main.py ./
+COPY PiDemo.py ./
 COPY hal ./hal
 
 # Intall the rpi.gpio python module
 RUN pip3 install --no-cache-dir rpi.gpio
 
 # Trigger Python script
-CMD ["python3", "./main.py"]
+CMD ["python3", "./PiDemo.py"]
